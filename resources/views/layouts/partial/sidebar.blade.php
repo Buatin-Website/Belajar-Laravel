@@ -13,15 +13,9 @@
         </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="{{ route('table') }}">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Tables</span>
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="{{ route('colors') }}">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Colors</span>
+        <a class="nav-link" href="{{ route('item.index') }}">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Item</span>
         </a>
     </li>
 </ul>

@@ -19,9 +19,7 @@ Route::get('/', function () {
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', 'HomeController@index')->name('dashboard');
-    Route::get('/table', 'HomeController@table')->name('table');
-    Route::get('/colors', 'HomeController@colors')->name('colors');
+    Route::resource('item', 'ItemController');
 });
 
-
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
